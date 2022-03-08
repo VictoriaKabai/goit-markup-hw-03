@@ -68,6 +68,7 @@ body {
 /*Стили для main Студия*/
 .hero {
   background-color: var(--dark-bg);
+  padding: 200px 0;
 }
 .hero-title {
   font-weight: 900;
@@ -113,6 +114,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-txt-cl);
+  margin-bottom: 10px;
 }
 .team {
   background-color: #f5f4fa;
@@ -217,20 +219,18 @@ img {
   margin-right: auto;
 }
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container,
 .header-nav-list,
 .header-list {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .logo-header {
-  margin-top: 24px;
+  padding-top: 24px;
   margin-right: 93px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 .header-nav-item,
 .header-list-item {
@@ -248,19 +248,30 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 696px;
-  padding-top: 200px;
-  padding-bottom: 40px;
+  margin-bottom: 30px;
 }
 .hero-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 200px;
-  margin-bottom: 200px;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.speciality-title,
+.filters-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .speciality-list {
   display: flex;
@@ -271,8 +282,11 @@ img {
 .speciality-item:last-child {
   margin: 0;
 }
+.works {
+  padding-top: 0;
+}
 .works-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .works-list {
   display: flex;
@@ -284,12 +298,13 @@ img {
   margin: 0;
 }
 .team-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
 }
 .team-item {
+  background: #ffffff;
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -298,21 +313,19 @@ img {
 .team-item:last-child {
   margin: 0;
 }
-.team-img {
-  margin-bottom: 30px;
+.team-item-inform {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-item-title {
   margin-bottom: 10px;
-}
-.team-item-txt {
-  margin-bottom: 30px;
 }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .logo-footer {
-  display: flex;
+  display: block;
   margin-bottom: 20px;
 }
 .footer-item-adress,
@@ -325,17 +338,16 @@ img {
 .filters-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filters-item {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 .filters-item:last-child {
   margin: 0;
 }
 .filters-btn {
   padding: 6px 22px;
-  margin-bottom: 16px;
 }
 .projects-list {
   display: flex;
@@ -343,7 +355,7 @@ img {
   margin-right: -30px;
   margin-bottom: -30px;
 }
-.projects-item-card {
+.projects-item {
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc((100% - 60px) / 3);
@@ -352,18 +364,11 @@ img {
   margin: 0;
 }
 .cards-txt {
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 .projects-item-title {
-  padding-top: 20px;
-  margin-right: 24px;
   margin-bottom: 4px;
-  margin-left: 24px;
-}
-.projects-item-txt {
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
