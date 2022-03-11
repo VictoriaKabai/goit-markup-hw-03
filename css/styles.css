@@ -62,9 +62,6 @@ body {
   color: currentColor;
   text-decoration: none;
 }
-.list {
-  list-style-type: none;
-}
 /*Стили для main Студия*/
 .hero {
   background-color: var(--dark-bg);
@@ -156,6 +153,8 @@ body {
 }
 /*Стили для main Портфолио*/
 .filters-btn {
+  border: transparent;
+  border-radius: 4px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -198,6 +197,7 @@ p {
 }
 ul,
 ol {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -205,11 +205,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-.list {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .container {
   width: 1200px;
@@ -358,10 +353,7 @@ img {
 .projects-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  flex-basis: calc((100% - 60px) / 3);
-}
-.projects-item:nth-child(3n) {
-  margin: 0;
+  flex-basis: calc((100% - 90px) / 3);
 }
 .cards-txt {
   padding: 20px 24px;
